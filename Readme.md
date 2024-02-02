@@ -1,43 +1,36 @@
-#!/bin/bash
+# Movie API
 
-# CatFact API Server
+Bu,Basit bir MicroServices JSON mimarisidir.
 
-## Introduction
+## Kurulum
 
-CatFact API Server is a simple Go application that provides cat facts through a RESTful API.
+1. Depoyu klonlayın:
 
-## Features
+   ```bash
+   git clone https://github.com/karalakrepp/MicroServicesLogic.git
+2. Proje dizinine gidin: 
+    ```bash 
+   cd MicroServicesLogic
 
-- Fetches cat facts from an external API
-- Logs request duration and errors using Logrus
-- Exposes a simple RESTful API for retrieving cat facts
+3. Bağımlılıkları yükleyin: 
+   ```bash 
+   go mod download
 
-## Installation
+## Kullanım
 
-To install the CatFact API Server, ensure you have Go installed on your machine:
-
-``bash
-go get -u github.com/karalakrepp/MicroServicesLogic
-
-
-
-
-
-## Usage
-Run the CatFact API Server:
-
-``bash
-    cd $GOPATH/src/github.com/karalakrepp/MicroServicesLogic
-    go run main.go
+1. Sunucuyu başlatın:
+   ```bash  
+   go run main.go
 
 
+Sunucu varsayılan olarak 8000 numaralı portta çalışacaktır. PORT ortam değişkenini ayarlayarak özel bir port belirleyebilirsiniz.
 
-### API Endpoints
-. Get Cat Fact 
-URL: /catfact
-Method: GET
-Response:
-Status Code: 200 OK on success
-Status Code: 500 Internal Server Error on failure
-Body: JSON containing a cat fact or an error message
-Example Request:
+2. API uç noktalarıyla etkileşime geçin:
+- GET /catfact: kedi bilgilerini getirir.
+
+Example Response:
+    ```bash  
+   {"fact": "Cats can make over 100 different sounds!"}
+
+
+- Bu uç noktalara HTTP istekleri yapmak için cURL veya Postman gibi araçları kullanabilirsiniz.
