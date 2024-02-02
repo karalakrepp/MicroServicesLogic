@@ -1,4 +1,4 @@
-# Movie API
+# MicroServicesLogic Json Catfact API
 
 Bu,Basit bir MicroServices JSON mimarisidir.
 
@@ -29,8 +29,9 @@ Sunucu varsayılan olarak 8000 numaralı portta çalışacaktır. PORT ortam de�
 - GET /catfact: kedi bilgilerini getirir.
 
 Example Response:
-    ```bash  
-   {"fact": "Cats can make over 100 different sounds!"}
+       ```bash  
+    {"fact": "Cats can make over 100 different sounds!"}
+  
 
 
 - Bu uç noktalara HTTP istekleri yapmak için cURL veya Postman gibi araçları kullanabilirsiniz.
