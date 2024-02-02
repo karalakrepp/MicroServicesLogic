@@ -30,7 +30,7 @@ Sunucu varsayılan olarak 8000 numaralı portta çalışacaktır. PORT ortam de�
 
 Example Response:
        ```bash  
-    {"fact": "Cats can make over 100 different sounds!"}
+    "fact": "Cats can make over 100 different sounds!"
   
 
 
